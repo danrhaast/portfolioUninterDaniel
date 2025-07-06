@@ -1,0 +1,285 @@
+
+/* Definição das variáveis de cor da página web */
+:root {
+    --preto: #110303;
+    --vermelho: #ff194b;
+    --vinho: #c3062c;
+    --laranja: #fcab10;
+    --marrom: #660d0d;
+    --azul: #9dd3df;
+    --branco: #c9d1d3;
+}
+
+/* Importação de fontes do gogle para a página web*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Deifnição de rolagem de página para uma visualização mais suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Definições padrões da página */
+body {
+    font-family: "Oswald", sans-serif;
+    font-weight: 555;
+    margin: 0;
+    padding: 0;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* Estilização do cabeçalho */
+header {
+    height: 80px;
+    margin: 10px;
+
+    nav {
+        margin-bottom:10px;
+        background: #110303e5;
+        height: 80px;
+        position: fixed;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+        left:0;
+        padding: 10px;
+    }
+
+    h1 {
+        margin-left: 10vw;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10vw;
+
+        div {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 20px;
+
+            a {
+                font-size: 18px;
+                color: var(--branco);
+                text-decoration: none;
+                transition: ease 0.3s;
+            }
+
+            a:hover {
+                color: var(--vermelho);
+            }
+        }
+    }
+}
+
+/* Seção de início da página web*/
+.begin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--marrom);
+
+    div {
+
+        margin: 20px;
+
+        h1 {
+            font-size: 30px;
+            margin: 2px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 30vw;
+            height: auto;
+        }
+
+        p {
+            margin: 2px;
+            font-size: 17px;
+        }
+    }
+}
+
+/* Seção de título usado antes de todas as seções */
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Seção de formação */
+.formacao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    div {
+        width: 70vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        p {
+            padding: 12px;
+            margin:  20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 3px 4px 0px var(--marrom);
+            align-items: center;
+            display: flex;
+        }
+    }
+}
+
+/* Seção de Habilidades*/
+.hability {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    div {
+        table {
+            width: 70vw;
+            
+            th {
+                background: var(--marrom);
+                margin: 10px;
+
+            }
+
+            td {
+                background: var(--marrom);
+            }
+
+            tr {
+                border: 2px solid black;
+                height: 50px;
+            }
+
+            .hab-title {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                font-size: 30px;
+                margin: 0px;
+                width: 30vw;
+                height: 158px;
+            }
+
+            .hab-desc {
+                padding: 7px;
+            }
+        }
+    }
+}
+
+/* Seção de Tecnologias*/
+.tecnology {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    table {
+        .tr-icons {
+            border-top-right-radius: 50px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 5px;
+            width: 70vw;
+            background: var(--marrom);
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+
+            td {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+/* Seção de Mídias Sociais */
+.socialMedia {
+    text-align: center;
+    padding: 10px;
+
+    .rede-icons {
+        display: flex;
+        justify-content: center;
+
+        div {
+            margin: 20px;
+        }
+    }
+}
+
+/* Estilização do cabeçalho */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+
+   h2 {
+    text-align: center;
+   }
+
+   .form {
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    height: 40vh;
+    background: var(--marrom);
+   }
+
+   label { 
+    margin-left: 10px;
+   }
+
+   .input {
+    margin-bottom: 10px;
+   }
+
+   input, textarea {
+    padding: 10px;
+    width: 295px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;   
+   }
+
+   #mensagem {
+    height: 70px;
+   }
+
+   button {
+    padding: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: var(--preto);
+    transition: ease 0.3s;
+   }
+
+   button:hover {
+    color: var(--branco);
+    background-color: var(--vinho);
+    cursor: pointer;
+   }
+}
